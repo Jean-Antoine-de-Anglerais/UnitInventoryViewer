@@ -1,5 +1,4 @@
-﻿using HarmonyLib;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.UI;
 
@@ -9,7 +8,7 @@ namespace UnitInventoryViewer_BepInEx
     {
         public static void OnEnable_Postfix(WindowCreatureInfo __instance)
         {
-            if (__instance.actor.inventory != null && __instance.actor.inventory.getResources().Count > 0) 
+            if (__instance.actor.inventory != null && __instance.actor.inventory.getResources().Count > 0)
             {
                 __instance.showCustomStat("resources", __instance.actor.inventory.getResources());
             }

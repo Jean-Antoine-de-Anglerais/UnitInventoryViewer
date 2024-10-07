@@ -1,14 +1,13 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные со сборкой.
-[assembly: AssemblyTitle("UnitInventoryViewer_BepInEx")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Unit Inventory Viewer")]
+[assembly: AssemblyDescription("Mod adds information about the resources in the creature's inventory to the creature's window")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Jean-Antoine d'Anglerais (le_ombre)")]
 [assembly: AssemblyProduct("UnitInventoryViewer_BepInEx")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
