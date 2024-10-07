@@ -1,0 +1,8 @@
+{
+  "name": "Unit Inventory Viewer",
+  "author": "Jean-Antoine d'Anglerais (le_ombre)",
+  "version": "1.0.0.0",
+  "targetGameBuild": 558,
+  "description": "Mod adds information about the resources in the creature's inventory to the creature's window",
+  "iconPath": "icon.png"
+}
