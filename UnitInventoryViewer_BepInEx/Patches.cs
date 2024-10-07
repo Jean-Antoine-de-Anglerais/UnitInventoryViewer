@@ -17,9 +17,13 @@ namespace UnitInventoryViewer_BepInEx
         public static void showCustomStat(this WindowCreatureInfo instance, string pID, Dictionary<string, ResourceContainer> dict)
         {
             Text text = instance.text_description;
-            text.text = text.text + LocalizedTextManager.getText(pID) + "\n";
+            text.text = text.text + LocalizedTextManager.getText(pID);
+            for (int i = 0; i < dict.Count; i++)
+            {
+                text.text += "\n";
+            }
             Text text2 = instance.text_values;
-            text2.text = text2.text + ((dict != null) ? string.Join(", ", dict.Select(r => $"{LocalizedTextManager.getText(r.Value.id)}: {r.Value.amount}")) : null) + "\n";
+            text2.text = text2.text + ((dict != null) ? string.Join("\n", dict.Select(r => $"{LocalizedTextManager.getText(r.Value.id)}: {r.Value.amount}")) : null) + "\n";
         }
     }
 }
